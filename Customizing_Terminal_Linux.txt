@@ -1,0 +1,24 @@
+-> https://github.com/romkatv/powerlevel10k
+
+-> sudo apt install zsh git (to install zsh and git)
+
+-> install all the font that repository is suggesting to install to show those nice locking icons
+
+-> 
+touch "$HOME/.cache/zshhistory"
+#-- Setup Alias in $HOME/zsh/aliasrc
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
+
+-> chsh $USER
+
+-> /bin/zsh
+
+-> p10k configure (to configure the termianl view)
+
+-> y (say yes for several time)
+    -> and design the way that we wantk
+
+-> if we want to use vscode integraged termianl then we have to add font to setting.json
+    ->"terminal.integrated.fontFamily": "MesloLGS NF"
+
