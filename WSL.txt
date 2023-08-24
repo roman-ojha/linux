@@ -1,0 +1,12 @@
+*) Enable Systemd/Systemctl:
+    -> https://youtu.be/UnCjLs8UWVo
+    -> After following the steps shown in video you can write the command in powershell:
+        -> wsl --shutdown (first shutdown the pc)
+        -> wsl -l -v (list of the wsl distro available)
+        -> wsl genie -s
+    
+
+*) Access WSL running server with windows browser:
+    -> ifconfig
+    -> see the ip address of the wsl
+    -> use that ip address to access the any localhost server running on wsl through host machine(windows)

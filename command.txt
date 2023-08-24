@@ -1,5 +1,6 @@
 *) 
     -> poweroff (to shutdown the pc)
+    -> reboot (to reboot the os)
     -> date (to see date)
     -> who (to see all user)
     -> whoami (to see current login user)

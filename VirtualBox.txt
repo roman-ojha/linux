@@ -1,0 +1,22 @@
+*) How to share folder in VirtualBox on Ubuntu Server from host:
+    -> To access a shared folder in VirtualBox on Ubuntu Server, you can follow these steps:
+    -> Install the VirtualBox Guest Additions in the guest OS. This is required to mount the shared folder. You can use the following command to install it: sudo apt-get install virtualbox-guest-utils.
+
+    -> Create a shared folder in VirtualBox by right-clicking on your VM and selecting Settings > Shared Folders > Add new shared folder.
+
+    -> In the Add Share prompt, select the Folder Path in your host that you want to be accessible inside your VM.
+
+    -> Type a name for the Folder Name.
+
+    -> Make sure that Read-only and Auto-mount are unchecked and Mount point is blank.
+
+    -> Start the virtual machine.
+
+    -> Mount the shared folder manually with the following command syntax: sudo mount -t vboxsf -o uid=$USER,gid=vboxsf [SHARE NAME] [MOUNT POINT]. Replace [SHARE NAME] with the name of your shared folder and [MOUNT POINT] with the directory where you want to mount it.
+
+    -> After following these steps, you should be able to access your shared folder from within your Ubuntu Server virtual machine.
+    
+
+*) How to copy & paste from Ubuntu VirtualBox guest to Windows host?
+    -> Go to VirtualMachine's Settings->General->Advanced->Shared Clipboard (Bidirectional)
+    -> Start your VM then install Virtualbox Guest Addition: https://askubuntu.com/questions/22743/how-do-i-install-guest-additions-in-a-virtualbox-vm/22745#22745
