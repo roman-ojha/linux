@@ -29,3 +29,6 @@
     -> sudo rm -r <folder_name> (to delete non-empty folder directory)
     -> nproc (to see number of core available in you system)
     -> lscup (to see cpu related information)
+    -> lscup (provide information about the cup)
+    -> top (provide list of machine information)
+    -> ifconfig (to see detail of ipaddress)
