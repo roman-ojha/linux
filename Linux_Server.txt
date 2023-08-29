@@ -1,0 +1,2 @@
+*) Install Ubuntu Desktop with Full GUI on an Ubuntu VPS:
+    -> https://www.codewithharry.com/blogpost/install-ubuntu-desktop-vps/

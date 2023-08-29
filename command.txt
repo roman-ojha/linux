@@ -32,3 +32,5 @@
     -> lscup (provide information about the cup)
     -> top (provide list of machine information)
     -> ifconfig (to see detail of ipaddress)
+    -> cd / (go to root directory)
+    -> env (list of all environment variable available on system)
