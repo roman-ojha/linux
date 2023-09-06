@@ -20,6 +20,7 @@
     -> cd <folder_name> (to get inside the folder)
     -> sudo apt update (to update package list)
     -> sudo apt install <package/app> (to install package or applications)
+    -> sudo apt install <package/app> -y (to install package with yes flag)
     -> sudo apt remove <package/app> (to uninstall package or application)
     -> sudo apt-get install <application>
     -> sudo apt remove nginx
@@ -34,3 +35,6 @@
     -> ifconfig (to see detail of ipaddress)
     -> cd / (go to root directory)
     -> env (list of all environment variable available on system)
+*) Systemctl:
+	-> sudo systemctl status <service> (like docker, nginx etc...)
+	-> sudo systemctl start <service>
