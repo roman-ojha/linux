@@ -29,12 +29,17 @@
     -> sudo rm -d <folder_name> (to delete empty folder directory)
     -> sudo rm -r <folder_name> (to delete non-empty folder directory)
     -> nproc (to see number of core available in you system)
-    -> lscup (to see cpu related information)
-    -> lscup (provide information about the cup)
+    -> lscpu (to see cpu related information)
     -> top (provide list of machine information)
     -> ifconfig (to see detail of ipaddress)
     -> cd / (go to root directory)
     -> env (list of all environment variable available on system)
+    -> ip address (to see list of machine network ip address)
+    -> cat /etc/os-release (get OS information)
+    -> free -m (get Memory information)
+    -> df -h (get Storage Information)
+    -> sudo -i (login as a root user)
+    
 *) Systemctl:
 	-> sudo systemctl status <service> (like docker, nginx etc...)
 	-> sudo systemctl start <service>
