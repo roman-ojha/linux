@@ -39,6 +39,8 @@
     -> free -m (get Memory information)
     -> df -h (get Storage Information)
     -> sudo -i (login as a root user)
+    -> lsblk (list all the block storage devices that are attached on OS)
+    -> sudo !! (run last command with sudo permission)
     
 *) Systemctl:
 	-> sudo systemctl status <service> (like docker, nginx etc...)
