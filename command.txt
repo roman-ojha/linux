@@ -41,6 +41,10 @@
     -> sudo -i (login as a root user)
     -> lsblk (list all the block storage devices that are attached on OS)
     -> sudo !! (run last command with sudo permission)
+    -> yes "<text>" >> <file_name>.txt (insert given text on a loop until press ctrl+c)
+    -> ls -lh (see file system directory with it's size, permissions and other information)
+    -> df -h (see all the Filesystem with it's size and other information)
+    -> echo "<text>" > <file_name>.<ex_name> (to append new text into file)
     
 *) Systemctl:
 	-> sudo systemctl status <service> (like docker, nginx etc...)
