@@ -45,7 +45,20 @@
     -> ls -lh (see file system directory with it's size, permissions and other information)
     -> df -h (see all the Filesystem with it's size and other information)
     -> echo "<text>" > <file_name>.<ex_name> (to append new text into file)
+    -> ls -al (also see all the hidden files & folders)
     
 *) Systemctl:
 	-> sudo systemctl status <service> (like docker, nginx etc...)
 	-> sudo systemctl start <service>
+
+*) Install packages on different linux distro:
+	-> cat /etc/os-release (check which os is running on container)
+	-> if Ubuntu or Debian, use the apt command:
+		-> apt update
+		-> apt install <package>
+	-> if CentOS or Red Hat, use the Yum command:
+		-> yum install <package>
+	-> Alpine Linux, use the apk command:
+		-> apk add <package_name>
+		-> apk --help
+		-> apk -h
