@@ -46,6 +46,8 @@
     -> df -h (see all the Filesystem with it's size and other information)
     -> echo "<text>" > <file_name>.<ex_name> (to append new text into file)
     -> ls -al (also see all the hidden files & folders)
+    -> tail <file_path> (to see last tail content)
+    -> tail -f <file_path> (to see last tail content with runtime changes)
     
 *) Systemctl:
 	-> sudo systemctl status <service> (like docker, nginx etc...)
