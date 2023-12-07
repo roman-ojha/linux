@@ -48,6 +48,10 @@
     -> ls -al (also see all the hidden files & folders)
     -> tail <file_path> (to see last tail content)
     -> tail -f <file_path> (to see last tail content with runtime changes)
+    -> su <user> (to switch user)
+    -> sudo passwd <user> (to set or change password of the given user)
+    -> sudo dpkg -i <package_name>.deb (to install .deb package)
+    -> dpkg --list (to see all the installed packages and remove if you wanted using: sudo apt-get remove <package_name>)
     
 *) Systemctl:
 	-> sudo systemctl status <service> (like docker, nginx etc...)
