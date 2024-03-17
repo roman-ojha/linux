@@ -52,6 +52,7 @@
     -> sudo passwd <user> (to set or change password of the given user)
     -> sudo dpkg -i <package_name>.deb (to install .deb package)
     -> dpkg --list (to see all the installed packages and remove if you wanted using: sudo apt-get remove <package_name>)
+    -> sudo chown -R <username> <path> (using superuser privileges to recursively change the ownership of all files and directories within the specified path to the user with the username provided)
     
 *) Systemctl:
 	-> sudo systemctl status <service> (like docker, nginx etc...)
