@@ -22,3 +22,7 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
 -> if we want to use vscode integraged termianl then we have to add font to setting.json
     ->"terminal.integrated.fontFamily": "MesloLGS NF"
 
+
+*) Add terminal file and folder icons:
+    -> https://github.com/Yash-Handa/logo-ls
+    -> https://youtu.be/YnGl9SDVn98

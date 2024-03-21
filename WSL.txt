@@ -1,12 +1,38 @@
+*) Commands:
+    -> wsl --shutdown (shutdown the pc)
+    -> wsl -l -v (list of the wsl distro available)
+    -> wsl genie -s
+    -> wsl --status (check the status of the wsl)
+    -> wsl --list --all (list of all the wsl distro)
+    -> wsl --setdefault <distro_name> (set the default wsl distro)
+    -> wsl -s <distro_name> (set the default wsl distro)
+    -> wsl -d <distro_name> (open the given wsl distro)
+    -> wsl -d <distro_name> --user <username> (open the given wsl distro with the given user)
+    -> wsl -d <distro_name> --shutdown (shutdown the given wsl distro)
+
+*) Install WSL2:
+    -> https://docs.microsoft.com/en-us/windows/wsl/install-win10
+    -> https://www.youtube.com/watch?v=ilKQHAFeQR0
+
+*) Install "Ubuntu" the latest version of ubuntu from microsoft store
+    -> sudo do-release-upgrade(to upgrade the ubuntu version)
+
 *) Enable Systemd/Systemctl:
     -> https://youtu.be/UnCjLs8UWVo
     -> After following the steps shown in video you can write the command in powershell:
         -> wsl --shutdown (first shutdown the pc)
         -> wsl -l -v (list of the wsl distro available)
         -> wsl genie -s
+        -> wsl --status (check the status of the wsl)
     
 
 *) Access WSL running server with windows browser:
     -> ifconfig
     -> see the ip address of the wsl
     -> use that ip address to access the any localhost server running on wsl through host machine(windows)
+
+
+*) More configuration:
+    -> https://youtu.be/235G6X5EAvM
+        -> https://github.com/christianlempa/videos/tree/main/windows-terminal-powerlevel10k
+    *) Install zsh shell and replace default bash
