@@ -1,0 +1,68 @@
+*) Definations:
+  -> tmux consist of 3 main objects:
+    1. Sessions
+      -> it is a top layer and manage collections of windows managed as a single unit. 
+      -> you can have any any number of session running at a time but only one session is attached at a time.
+    2. Windows
+      -> it is a second layer and manage collections of panes.
+    3. Panes
+      -> pane are the splits of a windows and represent an indeividual terminal session.
+  -> To enter command to tmux you have to use prefix key which is by default ctrl + b. this is the key combination that you use to enter into command.
+*) Default Commands
+  -> tmux (start new session)
+  *) Prefix command (ctrl + b)
+    -> <prefix> % (split pane horizontally)
+    -> <prefix> " (split pane vertically)
+    -> <prefix> arrow key (to move to next pane)
+    -> <prefix> { or } (move pane to left or right)
+    -> <prefix> z (zoom pane)
+    -> <prefix> x (kill pane)
+    -> <prefix> q (show pane number and move to pane by number)
+    -> <prefix> ! (break pane into new window)
+    -> <prefix> c (create new window)
+    -> <prefix> n (move to next window)
+    -> <prefix> p (move to previous window)
+    -> <prefix> <number> (move to window by number)
+    -> <prefix> , (rename window)
+    -> <prefix> & (kill window)
+    -> <prefix> d (detach from session)
+    -> <prefix> ? (show all key bindings)
+    -> <prefix> : (enter command mode)
+    -> <prefix> s (list sessions, from inside the session)
+    -> <prefix> $ (rename session)
+    -> <prefix> w (list of windows)
+    -> <prefix> t (show time)
+  -> tmux attach -t <session_name> (attach to session)
+  -> tmux ls (list sessions)
+  -> tmux rename-session -t <old_session_name> <new_session_name> (rename session)
+  -> tmux new -s <session_name> (create new session)
+  -> tmux kill-session -t <session_name> (kill session)
+  -> tmux source ~/.config/tmux/tmux.conf (reload or source tmux config, for that you have to be on the tmux session)
+
+*) Tmux Configuration setup:
+  *) Install Tmux plugin manager:
+    -> https://github.com/tmux-plugins/tpm
+  *) Create Tmux configuration file:
+    -> touch ~/.config/tmux/.tmux.conf
+
+
+
+unbind r
+# referesh tmux configuration
+bind r source-file ~/.tmux.conf
+
+# remap from ctrl+b to ctrl+s
+set -g prefix C-s
+
+# switch between pane
+setw -g mode-keys vi
+bind-key h select-pane -L
+bind-key j select-pane -D
+bind-key k select-pane -U
+bind-key l select-pane -R
+
+# List of pluginx
+set -g @plugin 'tmux-plugins/tpm'
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run '~/.tmux/plugins/tpm/tpm'
