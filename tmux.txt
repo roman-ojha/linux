@@ -9,6 +9,7 @@
       -> pane are the splits of a windows and represent an indeividual terminal session.
   -> To enter command to tmux you have to use prefix key which is by default ctrl + b. this is the key combination that you use to enter into command.
 *) Default Commands
+  -> More commands: https://tmuxcheatsheet.com/
   -> tmux (start new session)
   *) Prefix command (ctrl + b)
     -> <prefix> % (split pane horizontally)
@@ -32,37 +33,27 @@
     -> <prefix> $ (rename session)
     -> <prefix> w (list of windows)
     -> <prefix> t (show time)
+    -> <prefix> I (install added plugins)
+    -> <prefix> [ (enter copy mode)
+  -> tmux attach (attach to last session)
   -> tmux attach -t <session_name> (attach to session)
   -> tmux ls (list sessions)
   -> tmux rename-session -t <old_session_name> <new_session_name> (rename session)
   -> tmux new -s <session_name> (create new session)
   -> tmux kill-session -t <session_name> (kill session)
   -> tmux source ~/.config/tmux/tmux.conf (reload or source tmux config, for that you have to be on the tmux session)
+  -> tmux kill-server (kill all session)
+  -> tmux -V (check version)
 
 *) Tmux Configuration setup:
   *) Install Tmux plugin manager:
     -> https://github.com/tmux-plugins/tpm
+  *) Vim Tmux Navigator
+    -> https://github.com/christoomey/vim-tmux-navigator
+  *) Tmux theme:
+    -> https://github.com/catppuccin/tmux
   *) Create Tmux configuration file:
-    -> touch ~/.config/tmux/.tmux.conf
+    -> touch ~/.config/tmux/tmux.conf
+      -> Then add bellow code on '~/.tmux.conf':
+        -> source-file ~/.config/tmux/tmux.conf
 
-
-
-unbind r
-# referesh tmux configuration
-bind r source-file ~/.tmux.conf
-
-# remap from ctrl+b to ctrl+s
-set -g prefix C-s
-
-# switch between pane
-setw -g mode-keys vi
-bind-key h select-pane -L
-bind-key j select-pane -D
-bind-key k select-pane -U
-bind-key l select-pane -R
-
-# List of pluginx
-set -g @plugin 'tmux-plugins/tpm'
-
-# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
-run '~/.tmux/plugins/tpm/tpm'

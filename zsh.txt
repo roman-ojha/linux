@@ -1,0 +1,4 @@
+ Definition:
+    -> zsh is a shell designed for interactive use, although it is also a powerful scripting language.
+*) Install & configure:
+    -> https://youtu.be/235G6X5EAvM
