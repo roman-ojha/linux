@@ -1,0 +1,9 @@
+*) Command:
+  -> ctrl + t (list of all available files)
+  -> ctrl + r (list of history of commands)
+  -> fzf (fuzzy finder)
+  -> alt + c (change directory)
+  -> cat <file_name> | fzf (search line in file)
+  -> fzf-tmux (search in tmux)
+
+  -> learn more: https://youtu.be/qgG5Jhi_Els

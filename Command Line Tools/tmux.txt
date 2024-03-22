@@ -36,11 +36,14 @@
     -> <prefix> I (install added plugins)
     -> <prefix> [ (enter copy mode)
   -> tmux attach (attach to last session)
+  -> tmux a (attach to last session)
   -> tmux attach -t <session_name> (attach to session)
   -> tmux ls (list sessions)
   -> tmux rename-session -t <old_session_name> <new_session_name> (rename session)
   -> tmux new -s <session_name> (create new session)
   -> tmux kill-session -t <session_name> (kill session)
+  -> tmux kill-session -a (kill all session)
+  -> tmux kill-session (kill all session)
   -> tmux source ~/.config/tmux/tmux.conf (reload or source tmux config, for that you have to be on the tmux session)
   -> tmux kill-server (kill all session)
   -> tmux -V (check version)
@@ -57,3 +60,12 @@
       -> Then add bellow code on '~/.tmux.conf':
         -> source-file ~/.config/tmux/tmux.conf
 
+*) Plugins:
+  *) Tmuxifier:
+    -> To manage sessons and windows.
+    -> https://github.com/jimeh/tmuxifier
+    -> https://youtu.be/ceRYL271cao
+    *) Commands:
+      -> tmuxifier new-session <session_name> (create new session)
+  *) Tmuxinator:
+    -> https://github.com/tmuxinator/tmuxinator
