@@ -59,6 +59,7 @@
     -> /bin/sh (to run sh shell)
     -> /bin/zsh (to run zsh shell)
     -> uname -m (to see the architecture of the system)
+    -> printf "<text>" (to print the text)
     
 *) Systemctl:
 	-> sudo systemctl status <service> (like docker, nginx etc...)
