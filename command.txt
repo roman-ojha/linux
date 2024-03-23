@@ -57,6 +57,7 @@
         -> touch <file_name> (to create file)
         -> madir <folder_name> (to create folder)
         -> yes "<text>" >> <file_name>.txt (insert given text on a loop until press ctrl+c)
+        -> which <command> (to see the path of the command)
     *) Terminal
         -> clear (to clear screen)
         -> env (list of all environment variable available on system)
