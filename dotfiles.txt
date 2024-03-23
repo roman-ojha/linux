@@ -1,0 +1,10 @@
+*) Tips:
+  -> create '~/dotfiles' in user home directory
+  -> put all the dotfiels inside '~/dotfiles' directory
+  -> create a symbolic link for each dotfiles that exist on '.dotfiles' directory to user directory where os can access it.
+  -> Now you can manage all your dotfiles in one place and can easily sync it with git.
+  -> And put the '~/dotfiles' directory in git repository to sync it with git.
+  -> you can use 'stow' to manage the dotfiles symlinks easily.
+  -> we can check the symbolik link status using 'ls -lah <file-name>' command.
+  -> whenever you will add new dotfiles into '~/dotfiles' directory, you need to create a symbolic link for that file, so you have to run 'stow <file-name>' or 'stow .' command to create symbolic links for all files in '~/dotfiles' directory.
+  -> Example: https://youtu.be/y6XCebnB9gs
