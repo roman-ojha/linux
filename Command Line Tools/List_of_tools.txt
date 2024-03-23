@@ -1,0 +1,17 @@
+*) List of command line tools:
+  -> zsh
+  -> vim | neovim
+  -> tmux
+  -> git
+  -> fzf
+  -> ripgrep
+  -> bat
+  -> oh-my-zsh
+  -> zsh-syntax-highlighting
+  -> oh-my-posh
+  -> lazygit
+  -> logo-ls: https://github.com/Yash-Handa/logo-ls
+  -> homebrew
+  -> lazydocker
+  -> lazysql: https://github.com/jorgerojas26/lazysql
+  -> github cli

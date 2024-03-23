@@ -5,5 +5,6 @@
   -> alt + c (change directory)
   -> cat <file_name> | fzf (search line in file)
   -> fzf-tmux (search in tmux)
+  -> git branch | fzf (search in git)
 
   -> learn more: https://youtu.be/qgG5Jhi_Els
