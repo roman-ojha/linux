@@ -15,3 +15,7 @@
   -> lazydocker
   -> lazysql: https://github.com/jorgerojas26/lazysql
   -> github cli
+  -> tmuxifier
+  -> tmuxinator
+  -> tldr
+  -> zoxide

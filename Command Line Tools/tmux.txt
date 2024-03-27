@@ -35,6 +35,8 @@
     -> <prefix> t (show time)
     -> <prefix> I (install added plugins)
     -> <prefix> [ (enter copy mode)
+    -> <prefix> Shift + $ (rename session)
+    -> <prefix> Shift + Alt + $ (delete session)
   -> tmux attach (attach to last session)
   -> tmux a (attach to last session)
   -> tmux attach -t <session_name> (attach to session)
@@ -47,6 +49,11 @@
   -> tmux source ~/.config/tmux/tmux.conf (reload or source tmux config, for that you have to be on the tmux session)
   -> tmux kill-server (kill all session)
   -> tmux -V (check version)
+  -> tmux new (create new session)
+
+
+
+
 
 *) Tmux Configuration setup:
   *) Install Tmux plugin manager:
