@@ -37,6 +37,7 @@
     *) echo
         -> printf "<text>" (to print the text)
         -> echo "<text>" > <file_name>.<ex_name> (to append new text into file)
+        -> echo $0 (to see the shell name)
     *) cat & nano
         -> cat <file_name> (to see the content inside file)
         -> cat /etc/os-release (get OS information)
